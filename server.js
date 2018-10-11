@@ -1,3 +1,4 @@
+var capture = require("node-server-screenshot");
 //  OpenShift sample Node application
 var express = require('express'),
     app     = express(),
@@ -21,6 +22,29 @@ app.get('/', function (req, res) {
 app.get('/test', function (req, res) { 
     res.render('test.html', { pageCountMessage : null});
   
+});
+app.get('/view', function (req, res) {
+	if (req.query.url == null){
+		res.status(406).send('Not Acceptable');
+		return;
+	}
+	capture.fromURL(req.query.url,  __dirname+"/views/test.png",
+ {
+	 waitMilliseconds:5000,
+	 waitAfterSelector:"html",
+	 clip:{
+		 x:92,
+		 y:0,
+		 width:1076,
+		 height:623
+    }
+	
+ }, function(){
+   res.set('Content-Type', 'image/png');
+   res.download(__dirname+"/views/test.png");
+});
+    
+    
 });
 
 // error handling
