@@ -8,8 +8,7 @@
     "chai-http": "^2.0.1",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
-    "mocha": "^2.4.5",
-    "mongodb": "^2.1.16",
+    "mocha": "^2.4.5",  
     "morgan": "^1.7.0",
     "object-assign":"4.1.0"
   },
@@ -23,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/sclorg/nodejs-ex.git"
+    "url": "https://github.com/angel2004/nodejs-ex"
   },
-  "author": "Steve Speicher <sspeiche@gmail.com>",
+  "author": "Steve Speicher <sspeiche@gmail.com> forked by angel2004",
   "license": "CC-BY-1.0",
   "bugs": {
-    "url": "http://github.com/sclorg/nodejs-ex/issues"
+    "url": "https://github.com/angel2004/nodejs-ex/issues"
   },
-  "homepage": "http://github.com/sclorg/nodejs-ex"
+  "homepage": "https://github.com/angel2004/nodejs-ex"
 }
