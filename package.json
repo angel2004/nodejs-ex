@@ -12,7 +12,8 @@
     "morgan": "^1.7.0",
     "nightmare": "^3.0.1",
     "node-server-screenshot": "^0.2.0",
-    "object-assign": "4.1.0"
+    "object-assign": "4.1.0",
+     "electron": "^3.0.4"
   },
   "engine": {
     "node": "*",
