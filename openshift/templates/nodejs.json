@@ -94,10 +94,10 @@
               "namespace": "${NAMESPACE}",
               "name": "nodejs:${NODEJS_VERSION}"
             },
-            "env":  [
+            "env":  [            
               {
-                  "name": "NPM_MIRROR",
-                  "value": "${NPM_MIRROR}"
+                "name":"LD_LIBRARY_PATH",
+                "value": "${LD_LIBRARY_PATH}"
               }
             ]
           }
@@ -208,6 +208,10 @@
                     }
                 },
                 "env": [
+                   {
+                "name":"LD_LIBRARY_PATH",
+                "value": "${LD_LIBRARY_PATH}"
+              }
                 ]
               }
             ]
@@ -283,10 +287,10 @@
       "from": "[a-zA-Z0-9]{40}"
     },
     {
-      "name": "NPM_MIRROR",
-      "displayName": "Custom NPM Mirror URL",
-      "description": "The custom NPM mirror URL",
-      "value": ""
+      "name": "LD_LIBRARY_PATH",
+      "displayName": "Custom LD_LIBRARY_PATH",
+      "description": "The custom LD_LIBRARY_PATH",
+      "value": "/opt/app-root/src/lib"
     }
   ]
 }
